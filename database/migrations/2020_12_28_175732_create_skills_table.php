@@ -16,7 +16,7 @@ class CreateSkillsTable extends Migration
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
             $table->foreignId('cat_id')->constrained();
-            $table->string('name', 255);
+            $table->text('name');
             $table->string('img', 50);
             $table->boolean('active')->default(true);
             $table->timestamps();
