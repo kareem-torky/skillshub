@@ -19,6 +19,7 @@ class CreateExamsTable extends Migration
             $table->text('name');
             $table->string('img', 50);
             $table->text('desc');
+            $table->tinyInteger('questions_no');
             $table->tinyInteger('difficulty');
             $table->smallInteger('duration_mins');
             $table->boolean('active')->default(true);
